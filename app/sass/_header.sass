@@ -1,0 +1,105 @@
+@import "vars"
+
+.header
+  &__top
+  &__bottom
+
+.top-header
+  &__content
+    padding-top: 12px
+    padding-bottom: 14px
+    position: relative
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      bottom: 0
+      left: 15px
+      right: 15px
+      border-bottom: 2px dashed #ececef
+  &__info
+
+.info-header
+  list-style-type: none
+  margin: 0
+  padding: 0
+  display: flex
+  li
+    margin-right: 60px
+    &:last-child
+      margin-right: 0
+    a
+      color: $text
+  &__text, &__title
+    font-size: 14px
+  &__title
+    color: $accent-darker
+  &__icon
+    width: 24px
+    height: 24px
+    background-color: $text
+    color: #ffffff
+    border-radius: 50%
+    text-align: center
+    line-height: 23.5px
+    margin-right: 3px
+    
+.bottom-header
+  &__content
+    display: flex
+    align-items: center
+    padding-top: 40px
+    padding-bottom: 40px
+  &__logo
+    display: block
+    margin-right: auto
+  &__menu
+    margin-right: 40px
+  &__btn
+
+.menu
+  &__list
+    list-style-type: none
+    padding: 0
+    margin: 0
+    display: flex
+    > .menu-item
+      > a
+        font-weight: bold
+        display: block
+        padding: 5px 24px
+        color: $text
+        position: relative
+        text-decoration: none
+        transition: color .25s ease
+        span
+          position: relative
+          padding-bottom: 8px
+          &::before
+            content: ''
+            display: block
+            position: absolute
+            bottom: 0
+            left: 50%
+            transform: translateX(-50%)
+            height: 2px
+            background-color: $accent
+            width: 0
+            transition: width .25s ease
+      &:hover
+        > a
+          color: $accent
+          span
+            &::before
+              width: 100%
+    > .menu-item-has-children 
+      > a
+        &::after
+          content: ''
+          font-family: fontawesome
+          font-size: 10px
+          display: block
+          position: absolute
+          top: 55%
+          transform: translateY(-50%)
+          right: 10px
