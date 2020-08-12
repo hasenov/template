@@ -1,0 +1,129 @@
+@import "vars"
+
+.footer
+  position: relative
+  background-color: $text
+  color: #ffffff
+  &::before
+    content: ''
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-image: url('../img/waves.png')
+    opacity: 0.25
+    z-index: 1
+  &__inner
+    position: relative
+    z-index: 3
+  &__nav
+    margin-bottom: 30px
+
+.top-footer
+  &__container
+    padding-top: 55px
+    padding-bottom: 100px
+    border-bottom: 2px dashed rgba(#ffffff, .1)
+  &__logo-wrap
+    display: block
+
+.content-footer
+  padding: 35px 0 100px
+
+.bottom-footer
+  background-color: rgba(0,0,0, .1)
+  padding: 15px 0
+.copyright
+  text-align: center
+  margin-bottom: 0
+  font-size: 14px
+
+
+.socials-footer
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  &__title
+    margin-bottom: 0
+    margin-right: 10px
+    font-weight: bold
+  &__items
+    list-style-type: none
+    margin: 0
+    padding: 0
+    display: flex
+    a
+      width: 35px
+      height: 35px
+      line-height: 35px
+      text-align: center
+      display: block
+      border-radius: 50%
+      background-color: $accent
+      transition: background-color .25s ease
+      margin: 0 5px
+      color: $text
+      text-decoration: none
+      &:hover
+        background-color: #fff
+
+.footer-item
+  &__title
+    font-size: 36px
+    color: $accent
+    margin-bottom: 30px
+  &__contacts
+    margin-top: 30px
+    li
+      margin-bottom: 20px
+    .link
+      transition: color .25s ease
+      margin-left: 5px
+    a
+      color: #ffffff
+      text-decoration: none
+      display: flex
+      align-items: center
+      font-size: 14px
+      font-weight: normal
+      &:hover
+        .link
+          color: $accent
+    i
+      width: 24px
+      height: 24px
+      line-height: 24px
+      font-size: 10px
+      color: #000000
+
+.footer-nav
+  &__list
+    margin: 0 190px 0 0
+    padding: 0
+    list-style-type: none
+    column-count: 2
+    .menu-item
+      position: relative
+      margin-bottom: 16px
+      &::before
+        content: '\f105'
+        display: block
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: 0
+        font-family: fontawesome
+        color: $accent
+        font-size: 20px
+        font-weight: bold
+        line-height: 1
+      a
+        color: #ffffff
+        text-decoration: none
+        transition: color .25s ease
+        padding-left: 15px
+        font-weight: bold
+        &:hover
+          color: $accent

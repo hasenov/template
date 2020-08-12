@@ -42,4 +42,27 @@ $(function() {
 		}
 	});
 
+	$('.certificates-specialist').magnificPopup({
+		delegate: 'a:not(.slick-cloned)',
+		type: 'image',
+		tLoading: 'Loading image #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+			tError: '<a href="%url%">Ошибка при загрузке картинки #%curr%</a>.'
+		}
+	});
+
+	$('.reviews__js').slick({
+		slidesToShow: 3,
+		arrows: true,
+		dots: false,
+		prevArrow: '.reviews__nav--prev',
+		nextArrow: '.reviews__nav--next',
+	});
+
 });
