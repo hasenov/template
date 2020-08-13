@@ -67,15 +67,27 @@
         background-color: $accent
         opacity: 0
         transition: opacity .25s ease
+  &__item
+    width: 100%!important
 
 .showcase-item
   outline: none
   &__content
     padding-top: 200px
+    padding-bottom: 200px
   &__title
     font-size: 60px
+    line-height: 1.1
+    margin-bottom: 25px
   &__text
     margin-bottom: 70px
+  &__img-wrap
+    display: flex
+    flex-direction: column
+  &__img
+    max-width: 100%
+    height: auto
+    margin: auto
   &__btns .btn
     margin-right: 10px
     &:last-child

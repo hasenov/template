@@ -9,6 +9,8 @@ $(function() {
 		},
 		appendDots: '.showcase-slider__dots',
 		fade: true,
+		autoplay: false,
+		autoplaySpeed: 6000
 	});
 
 	$(".content-services__item").not(":first").hide();
@@ -63,6 +65,16 @@ $(function() {
 		dots: false,
 		prevArrow: '.reviews__nav--prev',
 		nextArrow: '.reviews__nav--next',
+	});
+
+	$('.menu__icon').on('click', function() {
+		$(this).toggleClass('active');
+		$('.bottom-header__menu .menu__list').toggleClass('active');
+	});
+
+	$('.menu__list > .menu-item-has-children > a').on('click', function() {
+		$(this).parent().toggleClass('show');
+		$(this).siblings('.sub-menu').toggleClass('active');
 	});
 
 });

@@ -7,7 +7,7 @@
 .top-header
   &__content
     padding-top: 12px
-    padding-bottom: 14px
+    padding-bottom: 6px
     position: relative
     &::after
       content: ''
@@ -24,8 +24,10 @@
   margin: 0
   padding: 0
   display: flex
+  flex-wrap: wrap
   li
     margin-right: 60px
+    margin-bottom: 8px
     &:last-child
       margin-right: 0
     a
@@ -53,6 +55,9 @@
   &__logo
     display: block
     margin-right: auto
+    img
+      max-width: 100%
+      height: auto
   &__menu
     margin-right: 40px
   &__btn
