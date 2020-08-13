@@ -12,6 +12,13 @@
       bottom: -30px
       right: 30px
 
+  .content-specialist
+    padding-left: 0
+
+  .footer-nav
+    &__list
+      margin: 0
+
 @media (max-width: 1300px)
   .socials-showcase
     display: none
@@ -90,6 +97,14 @@
     &__item
       height: 100px
 
+  .section-reviews
+    &__title
+      text-align: center
+      margin-bottom: 40px
+
+  .top-footer
+    &__logo-wrap
+      display: none
 
 // ≥992px
 +media-breakpoint-down(md)
@@ -167,6 +182,8 @@
           > a
             background-color: $accent
             border-radius: 40px
+            &:hover
+              color: #ffffff
         &:hover
           > a span::before
             display: none
@@ -362,6 +379,21 @@
       margin-right: auto
       margin-bottom: 20px
 
+  .section-gallery
+    &__title
+      text-align: center
+      margin-bottom: 30px
+
+  .section-specialist
+    text-align: center
+    &__img
+      margin: 0 auto
+  .certificates-specialist
+    justify-content: center
+    &__item
+      flex: 0 0 25%
+      max-width: 25%
+
 // ≥768px
 +media-breakpoint-down(sm)
   .services-info
@@ -396,6 +428,83 @@
     padding-bottom: 170px
   .content-difference
     padding-bottom: 100px
+    
+  .section-partners
+    padding: 50px 0 10px
+  .section-reviews
+    padding: 50px 0 50px
+  .section-specialist
+    &__container
+      padding-top: 50px
+      padding-bottom: 70px
+  .section-gallery
+    padding: 50px 0 50px
+  .section-difference
+    padding-top: 50px
+  .section-video
+    padding: 70px 0 50px
+  .section-stats
+    &__content
+      padding-top: 50px
+      padding-bottom: 50px
+  .section-callback
+    padding: 50px 0
+  .section-services
+    padding: 70px 0 100px
+
+  .gallery
+    justify-content: center
+    &__item
+      flex: 0 0 33.333333%
+      max-width: 33.333333%
+
+  .certificates-specialist
+    &__item
+      flex: 0 0 33.333333%
+      max-width: 33.333333%
+
+  .reviews
+    &__arrows
+      margin-left: 0
+
+  .review
+    padding: 10px
+    &__bottom
+      box-shadow: 0 0 10px rgba($text, .1)!important
+
+  .callback-form
+    flex-direction: column
+    align-items: center
+    &__input
+      width: 100%
+      margin-bottom: 30px
+    &__btn
+      margin-left: 0
+
+  .top-footer
+    &__socials
+      display: none
+    &__container
+      padding-top: 30px
+      padding-bottom: 30px
+    .callback-form__input
+      margin-bottom: 20px
+
+  .content-footer
+    text-align: center
+    padding-bottom: 80px
+
+  .footer-nav
+    &__list
+      text-align: left
+      margin: 0 auto
+
+  .footer-item
+    &__contacts
+      display: inline-block
+      margin-top: 20px
+      margin-left: auto
+      margin-right: auto
 
 // ≥576px
 +media-breakpoint-down(xs)
@@ -420,15 +529,6 @@
     &__icon-wrap
       margin-bottom: 10px
 
-  .callback-form
-    flex-direction: column
-    align-items: center
-    &__input
-      width: 100%
-      margin-bottom: 30px
-    &__btn
-      margin-left: 0
-
   .section-callback
     .callback-form
       &__btn
@@ -438,6 +538,39 @@
     .stat
       flex: 0 1 100%
       max-width: 100%
+
+  .gallery
+    &__item
+      flex: 0 0 50%
+      max-width: 50%
+      padding: 0 10px
+      height: auto
+
+  .certificates-specialist
+    &__item
+      flex: 0 0 50%
+      max-width: 50%
+    &__img
+      margin: 0 auto
+
+  .review
+    &__content
+      padding: 50px 20px 70px
+    &__name
+      font-size: 18px
+    &__text
+      font-size: 16px
+
+  .section-reviews
+    &__title
+      margin-bottom: 20px
+
+  .content-footer
+    padding-bottom: 60px
+
+  .footer-item
+    &__title
+      margin-bottom: 20px
 
 /*==========  Mobile First  ==========*/
 

@@ -24,7 +24,7 @@
 .top-footer
   &__container
     padding-top: 55px
-    padding-bottom: 100px
+    padding-bottom: 55px
     border-bottom: 2px dashed rgba(#ffffff, .1)
   &__logo-wrap
     display: block
@@ -100,13 +100,14 @@
 
 .footer-nav
   &__list
-    margin: 0 190px 0 0
+    display: inline-block
     padding: 0
     list-style-type: none
     column-count: 2
     .menu-item
       position: relative
       margin-bottom: 16px
+      margin-right: 20px
       &::before
         content: '\f105'
         display: block
@@ -125,5 +126,7 @@
         transition: color .25s ease
         padding-left: 15px
         font-weight: bold
+        display: inline-block
+        vertical-align: top
         &:hover
           color: $accent
