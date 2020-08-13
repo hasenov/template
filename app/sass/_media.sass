@@ -3,6 +3,15 @@
 
 /*==========  Desktop First  ==========*/
 
+@media (max-width: 1600px)
+  .section-video
+    max-width: none
+
+  .video
+    &__watch
+      bottom: -30px
+      right: 30px
+
 @media (max-width: 1300px)
   .socials-showcase
     display: none
@@ -46,6 +55,40 @@
       padding: 0
     &__title
       text-align: center
+
+  .content-services
+    &__body
+      padding-left: 0
+    &__title
+      margin-bottom: 15px
+    &__img-wrap
+      padding: 0
+      margin-bottom: 40px
+
+  .benefits-stats
+    max-width: none
+    margin-left: -10px
+    margin-right: -10px
+
+  .benefits-description
+    &__list
+      margin-bottom: 60px
+
+  .section-video
+    text-align: center
+    &__text:last-of-type
+      margin-bottom: 50px
+
+  .video
+    margin: 0 auto 50px auto
+
+  .content-difference
+    &__text
+      display: none
+
+  .gallery
+    &__item
+      height: 100px
 
 
 // ≥992px
@@ -232,7 +275,92 @@
         &:last-child
           margin-right: 0
       
+  .service-tabs
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    padding-right: 0
+    margin-bottom: 10px
+  .service-tab
+    background: none
+    padding: 0
+    border: none
+    border-radius: 0
+    margin: 0 15px 15px
+    &__icon
+      display: none
+    &.active, &:hover
+      background: none
+      border: none
+    &.active
+      .service-tab__title
+        border-bottom: none
+        color: $accent
+        padding-bottom: 3px
+    &__title
+      font-size: 18px
+      color: $text
+      border-bottom: 2px dashed rgba($text, .1)
+      padding-bottom: 1px
+      margin-right: 60px
+      transition: color .25s ease
+      font-weight: bold
+      cursor: pointer
+      &:last-child
+        margin-right: 0
+      &:hover
+        color: $accent
 
+  .content-services
+    &__img
+      margin: 0 auto
+    &__item
+      text-align: center
+    &__btns
+      flex-wrap: wrap
+      justify-content: center
+      flex-direction: row
+    &__body
+      padding: 0
+
+  .callback-description
+    margin-bottom: 30px
+    justify-content: center
+
+  .video
+    &__watch
+      padding: 0
+      bottom: auto
+      right: auto
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+  .watch-video
+    width: 100px
+    height: 100px
+    border-radius: 50%
+    &__btn
+      margin: 0
+      left: auto
+      top: auto
+      transform: none
+    &__content
+      display: none
+
+  .section-stats
+    &__img
+      display: none
+
+  .benefits-description
+    text-align: center
+    display: flex
+    flex-direction: column
+    &__list
+      text-align: left
+      display: inline-block
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 20px
 
 // ≥768px
 +media-breakpoint-down(sm)
@@ -244,6 +372,31 @@
     &__dots
       display: none
 
+  .section-titles
+    .section-subtitle
+      font-size: 36px
+
+  .content-services
+    &__title
+      font-size: 28px
+
+  .callback-description
+    &__subtitle
+      font-size: 28px
+    &__content
+      text-align: center
+
+  .video
+    margin: 0 auto 30px auto
+
+  .section-subtitle
+    font-size: 36px
+
+  .header-difference
+    padding-bottom: 170px
+  .content-difference
+    padding-bottom: 100px
+
 // ≥576px
 +media-breakpoint-down(xs)
   .services-info
@@ -254,6 +407,37 @@
     &__img-wrap
       padding: 0
 
+  .service-tab
+    margin: 0 10px 10px
+
+  .section-services
+    padding: 60px 0 90px
+  .section-video
+    padding: 80px 0 50px
+
+  .callback-description
+    flex-direction: column
+    &__icon-wrap
+      margin-bottom: 10px
+
+  .callback-form
+    flex-direction: column
+    align-items: center
+    &__input
+      width: 100%
+      margin-bottom: 30px
+    &__btn
+      margin-left: 0
+
+  .section-callback
+    .callback-form
+      &__btn
+        padding: 20px 35px
+
+  .benefits-stats
+    .stat
+      flex: 0 1 100%
+      max-width: 100%
 
 /*==========  Mobile First  ==========*/
 
